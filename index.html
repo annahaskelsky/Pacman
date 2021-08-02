@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inconsolata:wght@500&family=Orbitron:wght@500&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="init()" onkeyup="movePacman(event)">
+    <h1>PACMAN</h1>
+    <h2>Score: <span>0</span></h2>
+    <div class="board-container"></div>
+
+    <div class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p></p>
+          <button class="replay" onclick="init()">Play Again</button>
+    </div>
+  
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+</html>
